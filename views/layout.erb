@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= "#{page_name} | " if locals[:page_name] %>Cian Guinee - Software Engineer</title>
+    <link rel="stylesheet" type="text/css" href="/styles/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="page-content">
+        <%= yield %>
+      </div>
+    </div>
+    <div class="navigation">
+      <ul class="links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/quartet">Quartet</a></li>
+        <li><a href="https://github.com/guineec">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/cianguinee/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
